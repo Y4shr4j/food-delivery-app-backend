@@ -6,8 +6,8 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true },
     role: { type: String, default: 'GENERAL' },
     streetAddress: { type: String },
-    zipCode: { type: String },
-    phoneNumber: { type: String },
+    zipCode: { type: Number },
+    phoneNumber: { type: Number },
 }, {
     timestamps: true
 });
